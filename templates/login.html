@@ -1,15 +1,10 @@
-<!DOCTYPE html>
-<html>
+{% extends "base.html" %}
 
-<title>
-  Login
-</title>
+{% block title %}
+Login
+{% endblock %}
 
-<head>
-</head>
-
-<body>
-
+{% block body %}
   <form action='/login', method = 'POST'>
 
     <input type="text" name="user">
@@ -24,6 +19,4 @@
   </form>
 
   {{loginfailed}}
-</body>
-
-</html>
+{% endblock %}
